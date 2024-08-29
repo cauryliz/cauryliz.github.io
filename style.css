@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+.color1 {
+    #7f7f7f
+}
+
+;
+
+.color2 {
+    #bcbcbc
+}
+
+;
+
+.color3 {
+    #424242
+}
+
+;
+
+.color4 {
+    #7c7c7c
+}
+
+;
+
+.color5 {
+    #bcbcbc
+}
+
+img{
+    width: 100%;
+    display: flex;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0%;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2496b3;
+    padding: 10px;
+    
+}
+header ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+
+}
+body{
+    background-image: url(https://media.istockphoto.com/id/1354760412/es/vector/tecnolog%C3%ADa-abstracta-antecedentes-de-la-placa-de-circuito-c%C3%B3digo-de-procesador-de-chip.jpg?s=612x612&w=0&k=20&c=wTP1ty3V69LamR47IVd5xQB_WXztbWnsvZajlmqDWDU=);
+    background-color: #65a8a5;
+}
+.servicios {
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #05273b;
+}
+.contacto {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.cotizacion {
+    color: aliceblue;
+    text-decoration: none;
+}
+.ubicacion {
+    color: aliceblue;
+    text-decoration: none;
+}
+.cita {
+    color: aliceblue;
+    text-decoration: none;
+}
+.informes{
+    color: aliceblue;
+    text-decoration: none;
+}
+.whatsapp {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 150;
+}
+
+.facebook {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 150;
+}
+h1 {
+    display: flex;
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    justify-content: center;
+    margin: 10px;
+    text-decoration: underline;
+    align-items: center;
+    color: rgb(250, 254, 255);
+    background-image: url(https://media.istockphoto.com/id/1354760412/es/vector/tecnolog%C3%ADa-abstracta-antecedentes-de-la-placa-de-circuito-c%C3%B3digo-de-procesador-de-chip.jpg?s=612x612&w=0&k=20&c=wTP1ty3V69LamR47IVd5xQB_WXztbWnsvZajlmqDWDU=);
+}
+
+P {
+    color: aliceblue;
+    display: flex;
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+          "ELGR" 1,
+          "ELSH" 2;
+          font-size: 30px;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.links {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+.ubicaciones{
+   display: flex;
+    justify-content: center; 
+    flex-direction: row;
+}
+h4{
+   text-decoration: none;
+    text-align: center;
+}
+a{
+    align-items: row;
+    text-decoration: none;
+    color: #2496b3;
+}
+h6{
+    flex-direction: row;
+    text-decoration: underline;
+    font-family: fantasy;
+    color: #2496b3;
+}
+footer{
+    background-color: #2496b3;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h5{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #2496b3;
+    background-color: #112c46;
+}
+.invitacion img{
+    flex-direction: row;
+    align-items: center;
+    width: 30px;
+}
+.row{
+margin: 10px;
+}
+.carousel{
+    display: flex;
+    width: 70%;
+  justify-content: right;
+}
+.cuestionario{
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+.boton{
+    justify-content: center;
+    display: flex;
+}
+.test1{
+    font-family:  "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2;
+      font-size: 30px;
+    color: aliceblue;
+    background-color: #05273b;
+}
+.resultado{
+    background-color: #05273b;
+}
