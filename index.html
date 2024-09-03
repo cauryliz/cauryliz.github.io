@@ -13,28 +13,75 @@
 <body>
     <header>
         <img src="./imagenes/head.png" alt="logo rp mendoza">
-        <nav>
-            <div class="container-fluid"></div>
-            <ul>
-                <a href="#contacto" class="contacto">
-                    <li>CONTACTO</li>
-                </a>
-                <a href="#cotizacion" class="cotizacion">
-                    <li>COTIZACION</li>
-                </a>
-                <a href="#ubicacion" class="ubicacion">
-                    <li>UBICACION</li>
-                </a>
-                <a href="#cita" class="cita">
-                    <li>PROGRAMAR CITA</li>
-                    <a href="#informes" class="informes">
-                        <li>INFORMES</li>
-                    </a>
+        <script>
+
+            function alternar(menu)
+           
+            {
+           
+              var oMenu = document.getElementById(menu);
+           
+              //Si el menu tiene clase abierto
+           
+              //cambia clase a cerrado y cambia el botón
+           
+              if (oMenu.classList.contains('abierto')){
+           
+                 oMenu.classList.remove('abierto');
+           
+                 oMenu.classList.add('cerrado');
+           
+                 event.target.innerText = 'Menu'
+           
+               }
+           
+              //Si no está abierto, cambia clase a abierto y cambia el botón 
+           
+              else{
+           
+                 oMenu.classList.remove('cerrado');
+           
+                 oMenu.classList.add('abierto');
+           
+                 event.target.innerText = 'Cerrar'
+           
+               }
+           
+            }
+           
+            </script>
+          <nav class="cajaNav">
+  
+            <div class="titNav">
+          
+            <div class="logo"></div>
+          
+            <div class="toggle" onclick="alternar('menu')">MENU</div>
+          
+            </div>
+          
+            <ul class="barNav cerrado" id="menu"> 
+          
+              <li><a href="./index.html#contacto">CONTACTO</a></li>
+          
+              <li><a href="./index.html#cotizacion">COTIZACION</a></li>
+          
+              <li><a href="./index.html#cita">CITA</a></li>
+          
+              <li><a href="./index.html#informes">INFORMES</a></li> 
+  
+              <li><a href="./index.html#ubicacion">UBICACION</a></li>
+          
             </ul>
-        </nav>
+          
+          </nav>
+              </div>
+            </div>
+          </nav> 
+        </div>
         </div>
     </header>
-    <img src="./imagenes/local2.jpg" alt="localmatriz">
+    <img src="./imagenes/local3.jpg" alt="localmatriz">
     <div class="display flex">
         <div class="servicios">
             <div class="row">
@@ -91,7 +138,7 @@
                                 una
                                 cotizacion
                                 en
-                                linea (proximamente)</p>
+                                linea</p>
                                 <div class="boton">
                                 <a href="./test.html"><button type="button" class="btn btn-light">Click Aqui Para Realizar el Cuestionario</button></a>
                             </div>
@@ -100,11 +147,11 @@
                     <div class="col-md-6">
                         <div id="informes">
                             <h1>INFORMES</h1>
-                            <P>Aqui podras consultar el estado de tu equipo en reparacion<br>(Proximamente)</P>
+                            <P>Aqui podras consultar el estado de tu equipo en reparacion</P>
                             <div class="cuestionario">
                                 <form class="row g-3 needs-validation" novalidate>
                                     <div class="col-md-4">
-                                        <label for="validationCustom01" class="form-label">Nombre (como aparece en su nota)</label>
+                                        <label for="validationCustom01" class="form-label">Nombre (como aparece en su nota de remision)</label>
                                         <input type="text" class="form-control" id="validationCustom01" value=""
                                             required>
                                         <div class="valid-feedback">
@@ -112,7 +159,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <label for="validationCustom02" class="form-label">Apellido</label>
+                                        <label for="validationCustom02" class="form-label">Numero de Nota</label>
                                         <input type="text" class="form-control" id="validationCustom02" value=""
                                             required>
                                         <div class="valid-feedback">
@@ -128,7 +175,7 @@
                             </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                <button class="btn btn-primary" type="submit">ENVIAR</button>
                             </div>
                             </form>
                         </div>

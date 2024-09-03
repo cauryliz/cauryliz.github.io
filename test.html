@@ -12,27 +12,74 @@
 <body>
     <header>
         <img src="./imagenes/head.png" alt="logo rp mendoza">
-        <nav>
-            <div class="container-fluid"></div>
-            <ul>
-                <a href="./index.html #contacto" class="contacto">
-                    <li>CONTACTO</li>
-                </a>
-                <a href="./index.html #cotizacion" class="cotizacion">
-                    <li>COTIZACION</li>
-                </a>
-                <a href="./index.html #ubicacion" class="ubicacion">
-                    <li>UBICACION</li>
-                </a>
-                <a href="./index.html #cita" class="cita">
-                    <li>PROGRAMAR CITA</li>
-                    <a href="./index.html #informes" class="informes">
-                        <li>INFORMES</li>
-                    </a>
-            </ul>
+        <script>
+
+          function alternar(menu)
+         
+          {
+         
+            var oMenu = document.getElementById(menu);
+         
+            //Si el menu tiene clase abierto
+         
+            //cambia clase a cerrado y cambia el botón
+         
+            if (oMenu.classList.contains('abierto')){
+         
+               oMenu.classList.remove('abierto');
+         
+               oMenu.classList.add('cerrado');
+         
+               event.target.innerText = 'Menu'
+         
+             }
+         
+            //Si no está abierto, cambia clase a abierto y cambia el botón 
+         
+            else{
+         
+               oMenu.classList.remove('cerrado');
+         
+               oMenu.classList.add('abierto');
+         
+               event.target.innerText = 'Cerrar'
+         
+             }
+         
+          }
+         
+          </script>
+        <nav class="cajaNav">
+
+          <div class="titNav">
+        
+          <div class="logo"></div>
+        
+          <div class="toggle" onclick="alternar('menu')">MENU</div>
+        
+          </div>
+        
+          <ul class="barNav cerrado" id="menu"> 
+            <li><a href="./index.html">HOME</a></li>
+        
+            <li><a href="./index.html#contacto">CONTACTO</a></li>
+        
+            <li><a href="./index.html#cotizacion">COTIZACION</a></li>
+        
+            <li><a href="./index.html#cita">CITA</a></li>
+        
+            <li><a href="./index.html#informes">INFORMES</a></li> 
+
+            <li><a href="./index.html#ubicacion">UBICACION</a></li>
+        
+          </ul>
+        
         </nav>
+            </div>
+          </div>
+        </nav> 
         </div>
-        <h1>SELECCIONA LAS OPCINES CON LAS QUE TE SIENTAS IDENTIFICADO(A)</h1>
+        <h1>SELECCIONA LAS OPCIONES CON LAS QUE TE SIENTAS IDENTIFICADO/A</h1>
         <div class="test1">
             <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -66,7 +113,7 @@
   </div>
         </div>
         <div class="resultado">
-            <p>SI SELECCIONASTE TODAS LAS CASILLAS, PUEDES ENVIAR UN INBOX, DM O MENSAJE A CUALQUIIERA DE NUESTRAS REDES.
+            <p>SI SELECCIONASTE TODAS LAS CASILLAS, PUEDES ENVIAR UN INBOX, DM O MENSAJE A CUALQUIIERA DE NUESTROS MEDIOS DE CONTACTO.
             </p>
         </div>
     </header>
